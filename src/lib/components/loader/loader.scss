@@ -1,0 +1,93 @@
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -11px;
+    margin-top: -11px;
+    .square {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: #00a8ff;
+    }
+    #square1 {
+        top: 0;
+        left: 12px;
+        -webkit-animation: rotateTile 1.6s ease-in-out infinite alternative 0.4s;
+        -moz-animation: rotateTile 1.6s ease-in-out infinite alternative 0.4s;
+        animation: rotateTile 1.6s ease-in-out infinite alternative 0.4s;
+    }
+    #square2 {
+        top: 0;
+        left: 12px;
+        -webkit-animation: rotateTile 1.6s ease-in-out infinite alternative 1.2s;
+        -moz-animation: rotateTile 1.6s ease-in-out infinite alternative 1.2s;
+        animation: rotateTile 1.6s ease-in-out infinite alternative 1.2s;
+    }
+    #square3 {
+        top: 12px;
+        left: 12px;
+        -webkit-animation: rotateTile 1.6s ease-in-out infinite alternative 0.8s;
+        -moz-animation: rotateTile 1.6s ease-in-out infinite alternative 0.8s;
+        animation: rotateTile 1.6s ease-in-out infinite alternative 0.8s;
+    }
+}
+
+@-webkit-keyframes rotateTile{
+    20% {
+        height: 10px;
+        margin-top: 0px;
+    }
+    40% {
+        height: 0px;
+        margin-top: 5px;
+    }
+    60% {
+        height: 0px;
+        margin-top: 5px;
+    }
+    80% {
+        height: 10px;
+        margin-top: 0px;
+    }
+}
+
+@keyframes rotateTile{
+    20% {
+        height: 10px;
+        margin-top: 0px;
+    }
+    40% {
+        height: 0px;
+        margin-top: 5px;
+    }
+    60% {
+        height: 0px;
+        margin-top: 5px;
+    }
+    80% {
+        height: 10px;
+        margin-top: 0px;
+    }
+    
+}
+
+@-moz-keyframes rotateTile{
+    20% {
+        height: 10px;
+        margin-top: 0px;
+    }
+    40% {
+        height: 0px;
+        margin-top: 5px;
+    }
+    60% {
+        height: 0px;
+        margin-top: 5px;
+    }
+    80% {
+        height: 10px;
+        margin-top: 0px;
+    }
+    
+}
